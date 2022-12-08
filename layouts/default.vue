@@ -1,15 +1,17 @@
 <template>
     <div>
-        App
+        <HackerFooter/>
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-
+import HackerFooter from '~~/components/common/HackerFooter.vue';
 export default defineComponent({
+    components:{
+    HackerFooter
+},
     setup () {
-        
 
         return {}
     }
