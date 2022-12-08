@@ -1,5 +1,9 @@
 <template>
     <div>
+        <HackerHeader/>
+        <div class="pageWrap">
+            <NuxtPage/>
+        </div>
         <HackerFooter/>
         <HackerLoading/>
     </div>
@@ -7,13 +11,15 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HackerFooter from '~~/components/common/HackerFooter.vue';
+import HackerHeader from '~~/components/common/HackerHeader.vue';
 import HackerLoading from '~~/components/common/HackerLoading.vue';
+import HackerFooter from '~~/components/common/HackerFooter.vue';
 
 export default defineComponent({
     components:{
         HackerFooter,
-        HackerLoading
+        HackerLoading,
+        HackerHeader
 },
     setup () {
 
