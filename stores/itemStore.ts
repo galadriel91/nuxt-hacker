@@ -9,6 +9,11 @@ export const useItems = defineStore('items', {
         posts: {} as PostsItem,
     }),
     actions: {
+        // async FETCH_LIST(payload: { pageName: string; pageNum: number }) {
+        //     const { data } = await fetchListItem(payload);
+        //     this.lists = data;
+        //     return data;
+        // },
         async FETCH_LIST(payload: { pageName: string; pageNum: number }) {
             const { data } = await fetchListItem(payload);
             this.lists = data;

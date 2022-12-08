@@ -10,12 +10,19 @@ const instance = axios.create({
     baseURL: import.meta.env.VITE_APP_API_URI as string,
 });
 
+// const fetchListItem = ({
+//     pageName,
+//     pageNum,
+// }: GetListItemParams): Promise<AxiosResponse<ListItems[]>> => {
+//     return instance.get(`${pageName}/${pageNum}.json`);
+// };
+
 const fetchListItem = ({
     pageName,
-    pageNum,
 }: GetListItemParams): Promise<AxiosResponse<ListItems[]>> => {
-    return instance.get(`${pageName}/${pageNum}.json`);
+    return instance.get(`${pageName}/1.json`);
 };
+
 
 const fetchUserItem = (userId: string): Promise<AxiosResponse<UserItems>> => {
     return instance.get(`user/${userId}.json`);

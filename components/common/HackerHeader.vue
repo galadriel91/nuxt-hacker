@@ -17,40 +17,40 @@
                             :to="{ name: 'news', params: { id: currentPage } }"
                             ><span>NEWS</span></NuxtLink
                         > -->
-                        <NuxtLink to="/">
+                        <NuxtLink to="/news">
                             <span>NEWS</span>
-                        </NuxtLink>>
+                        </NuxtLink>
                     </li>
                     <li @click="onClickOffBar">
-                        <NuxtLink>
+                        <NuxtLink to="/ask">
                             <span>ASK</span>
-                        </NuxtLink>>
+                        </NuxtLink>
                         <!-- <NuxtLink
                             :to="{ name: 'ask', params: { id: currentPage } }"
                             ><span>ASK</span></NuxtLink
                         > -->
                     </li>
                     <li @click="onClickOffBar">
-                        <NuxtLink>
+                        <NuxtLink to="/jobs">
                             <span>JOBS</span>
-                        </NuxtLink>>
+                        </NuxtLink>
                         <!-- <NuxtLink
                             :to="{ name: 'jobs', params: { id: currentPage } }"
                             ><span>JOBS</span></NuxtLink
                         > -->
                     </li>
                     <li @click="onClickOffBar">
-                        <NuxtLink>
+                        <NuxtLink to="/show">
                             <span>SHOW</span>
-                        </NuxtLink>>
+                        </NuxtLink>
                         <!-- <NuxtLink
                             :to="{ name: 'show', params: { id: currentPage } }"
                             ><span>SHOW</span></NuxtLink
                         > -->
                     </li>
-                    <li>
+                    <!-- <li>
                         <button :class="isDark" @click="onClickDark"></button>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
             <button :class="isDark" @click="onClickDark" class="dark"></button>
