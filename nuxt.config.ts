@@ -10,5 +10,13 @@ export default defineNuxtConfig({
             ],
             title: 'Hacker News',
         }
-    }
+    },
+    modules: [
+        [
+            '@pinia/nuxt',
+            {
+                autoImports: ['defineStore', 'acceptHMRUpdate'],
+            },
+        ]
+    ],
 })
