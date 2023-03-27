@@ -1,6 +1,6 @@
 <template>
     <div class="heroContainer">
-        <!-- <HackerHeader /> -->
+        <HackerHeader />
         <div class="heroContainerWrap">
             <div class="heroContainerWrapText">
                 <h2>
@@ -29,12 +29,12 @@
 </template>
 
 <script lang="ts">
-// import HackerHeader from '@/components/common/HackerHeader.vue';
+import HackerHeader from '@/components/common/HackerHeader.vue';
 // import { useCommon } from '@/store/commonStore';
 import { defineComponent } from 'vue';
 export default defineComponent({
     components: {
-        // HackerHeader,
+        HackerHeader,
     },
     setup() {
         // const common = useCommon();
