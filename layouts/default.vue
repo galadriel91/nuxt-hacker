@@ -1,6 +1,8 @@
 <template>
     <div>
-        <p>뭐지</p>
+        <div class="pageWrap">
+            <NuxtPage/>
+        </div>
     </div>
 </template>
 
