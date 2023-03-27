@@ -20,28 +20,28 @@
                     <li @click="onClickOffBar">
                         <NuxtLink
                             :class="{ active: whatName === 'news' }"
-                            to="/news"
+                            :to="{name:'news-id', params:{id:1}}"
                             ><span>News</span></NuxtLink
                         >
                     </li>
                     <li @click="onClickOffBar">
                         <NuxtLink
                             :class="{ active: whatName === 'ask' }"
-                            to="/ask"
+                            :to="{name:'news-id', params:{id:1}}"
                             ><span>Ask</span></NuxtLink
                         >
                     </li>
                     <li @click="onClickOffBar">
                         <NuxtLink
                             :class="{ active: whatName === 'jobs' }"
-                            to="/jobs"
+                            :to="{name:'news-id', params:{id:1}}"
                             ><span>Jobs</span></NuxtLink
                         >
                     </li>
                     <li @click="onClickOffBar">
                         <NuxtLink
                             :class="{ active: whatName === 'show' }"
-                            to="/show"
+                            :to="{name:'news-id', params:{id:1}}"
                             ><span>Show</span></NuxtLink
                         >
                     </li>
