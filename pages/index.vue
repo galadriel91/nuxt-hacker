@@ -11,15 +11,16 @@
 <script lang="ts">
 import MainSection from '@/components/main/MainSection.vue';
 import MainHero from '@/components/main/MainHero.vue';
-// import { useCommon } from '@/store/commonStore';
+import { useCommon } from '@/store/commonStore';
 import { defineComponent } from 'vue';
+import { storeToRefs } from 'pinia';
 export default defineComponent({
     components: {
         MainSection,
         MainHero,
     },
     setup() {
-        // const common = useCommon();
+        const common = useCommon();
         // const { OFF_LOADING } = common;
         // const offLoading = () => {
         //     OFF_LOADING();
