@@ -1,6 +1,5 @@
 <template>
     <div>
-        뉴스페이지
     </div>
 </template>
 
@@ -9,7 +8,9 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
     setup () {
-        
+        definePageMeta({
+            header: true
+        })
 
         return {}
     }

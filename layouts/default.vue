@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- <HackerHeader/> -->
+        <HackerHeader v-if="isNav"/>
         <div class="pageWrap">
             <NuxtPage/>
         </div>
@@ -9,17 +9,24 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-// import HackerHeader from '@/components/common/HackerHeader.vue';
+import { defineComponent , computed } from 'vue'
+import HackerHeader from '@/components/common/HackerHeader.vue';
 import HackerFooter from '@/components/common/HackerFooter.vue';
 
 export default defineComponent({
     components: { 
-        // HackerHeader,
+        HackerHeader,
         HackerFooter 
     },
     setup() {
-        return {};
+        const route = useRoute()
+        console.log(route.meta)
+        const isNav = computed(() => {
+            return route.meta.header;
+        });
+        return {
+            isNav
+        };
     },
 })
 </script>
