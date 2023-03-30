@@ -1,11 +1,11 @@
 <template>
     <MainHero />
     <MainSection />
-    <!-- <img
+    <img
         class="loadingimg"
         src="@/assets/image/HackerNews1.svg"
         alt="로고 이미지"
-    /> -->
+    />
 </template>
 
 <script lang="ts">
@@ -21,13 +21,13 @@ export default defineComponent({
     },
     setup() {
         const common = useCommon();
-        // const { OFF_LOADING } = common;
-        // const offLoading = () => {
-        //     OFF_LOADING();
-        // };
-        // return {
-        //     offLoading,
-        // };
+        const { OFF_LOADING } = common;
+        const offLoading = () => {
+            OFF_LOADING();
+        };
+        return {
+            offLoading,
+        };
     },
 });
 </script>

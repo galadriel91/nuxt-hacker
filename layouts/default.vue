@@ -5,6 +5,7 @@
             <NuxtPage/>
         </div>
         <HackerFooter/>
+        <HackerLoading/>
     </div>
 </template>
 
@@ -12,11 +13,13 @@
 import { defineComponent , computed } from 'vue'
 import HackerHeader from '@/components/common/HackerHeader.vue';
 import HackerFooter from '@/components/common/HackerFooter.vue';
+import HackerLoading from '~~/components/common/HackerLoading.vue';
 
 export default defineComponent({
-    components: { 
+    components: {
         HackerHeader,
-        HackerFooter 
+        HackerFooter,
+        HackerLoading
     },
     setup() {
         const route = useRoute()

@@ -24,27 +24,29 @@
             class="loadingimg"
             src="@/assets/image/mainBg.jpg"
             alt="이미지"
+            @load="offLoading"
         />
     </div>
 </template>
 
 <script lang="ts">
 import HackerHeader from '@/components/common/HackerHeader.vue';
-// import { useCommon } from '@/store/commonStore';
+import { useCommon } from '@/store/commonStore';
 import { defineComponent } from 'vue';
 export default defineComponent({
     components: {
         HackerHeader,
     },
     setup() {
-        // const common = useCommon();
-        // const { OFF_LOADING } = common;
-        // const offLoading = () => {
-        //     OFF_LOADING();
-        // };
-        // return {
-        //     offLoading,
-        // };
+        const common = useCommon();
+        const { OFF_LOADING , ON_LOADING } = common;
+        const offLoading = () => {
+            console.log(1)
+            ON_LOADING();
+        };
+        return {
+            offLoading,
+        };
     },
 });
 </script>
