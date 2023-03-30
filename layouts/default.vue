@@ -20,7 +20,6 @@ export default defineComponent({
     },
     setup() {
         const route = useRoute()
-        console.log(route.meta)
         const isNav = computed(() => {
             return route.meta.header;
         });
