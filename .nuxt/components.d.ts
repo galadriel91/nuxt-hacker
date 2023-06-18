@@ -2,6 +2,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'CommonHackerFooter': typeof import("../components/common/HackerFooter.vue")['default']
+    'CommonHackerHeader': typeof import("../components/common/HackerHeader.vue")['default']
     'MainHero': typeof import("../components/main/MainHero.vue")['default']
     'MainSection': typeof import("../components/main/MainSection.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -23,6 +24,7 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyCommonHackerFooter': typeof import("../components/common/HackerFooter.vue")['default']
+    'LazyCommonHackerHeader': typeof import("../components/common/HackerHeader.vue")['default']
     'LazyMainHero': typeof import("../components/main/MainHero.vue")['default']
     'LazyMainSection': typeof import("../components/main/MainSection.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -47,6 +49,7 @@ declare module 'vue' {
 }
 
 export const CommonHackerFooter: typeof import("../components/common/HackerFooter.vue")['default']
+export const CommonHackerHeader: typeof import("../components/common/HackerHeader.vue")['default']
 export const MainHero: typeof import("../components/main/MainHero.vue")['default']
 export const MainSection: typeof import("../components/main/MainSection.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -68,6 +71,7 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyCommonHackerFooter: typeof import("../components/common/HackerFooter.vue")['default']
+export const LazyCommonHackerHeader: typeof import("../components/common/HackerHeader.vue")['default']
 export const LazyMainHero: typeof import("../components/main/MainHero.vue")['default']
 export const LazyMainSection: typeof import("../components/main/MainSection.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']

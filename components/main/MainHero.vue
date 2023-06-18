@@ -1,6 +1,6 @@
 <template>
     <div class="heroContainer">
-        <!-- <HackerHeader /> -->
+        <HackerHeader />
         <div class="heroContainerWrap">
             <div class="heroContainerWrapText">
                 <h2>
@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-// import HackerHeader from '@/components/common/HackerHeader.vue';
+import HackerHeader from '@/components/common/HackerHeader.vue';
 </script>
 
 <style lang="scss" scoped>
