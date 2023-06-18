@@ -1,0 +1,17 @@
+div{
+    width: 100%; height: 5rem; background: #F5F7FA; border: 1px solid rgba(60, 72, 98, .3); border-radius: 4px;
+    font-size: 2rem; color: rgba(60, 72, 98, .8); font-weight: bold; text-align: center; line-height: 5rem;
+    cursor: pointer; transition: all .5s; display: none; box-sizing: border-box;
+    &:hover{
+        color: #00A19D; background: #f1f1f1;
+    }
+    &.on{
+        display: block;
+    }
+}
+
+@media all and (max-width:500px) {
+    div{
+        height: 4rem; font-size: 1.7rem; line-height: 4rem;
+    }
+}
