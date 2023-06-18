@@ -1,4 +1,7 @@
 <template>
+    <div class="pageWrap">
+        <NuxtPage/>
+    </div>
     <HackerFooter/>
 </template>
 
