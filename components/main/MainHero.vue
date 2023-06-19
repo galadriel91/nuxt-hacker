@@ -15,8 +15,7 @@
                     Fastest,<br class="nomal" />
                     anytime, anywhere.
                 </p>
-                <a href="https://news.ycombinator.com/login?goto=news"
-                    >Sign Up</a
+                <a href="https://news.ycombinator.com/login?goto=news" target="_blank">Sign Up</a
                 >
             </div>
         </div>
