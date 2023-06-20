@@ -46,7 +46,12 @@
                         >
                     </li>
                     <li>
-                        <button class="login">Login</button>
+                        <a
+                            class="login"
+                            href="https://news.ycombinator.com/login?goto=news"
+                            target="_blank"
+                            >Login</a
+                        >
                     </li>
                 </ul>
             </nav>
@@ -70,9 +75,11 @@ const route = useRoute();
 const isCheck = ref(false);
 
 const onClickBars = () => {
+    // document.body.classList.toggle('on');
     isCheck.value = !isCheck.value;
 };
 const onClickOffBar = () => {
+    // document.body.classList.toggle('on');
     isCheck.value = false;
 };
 
@@ -83,6 +90,15 @@ const isNav = computed(() => {
 const whatName = computed(() => {
     return route.name;
 });
+
+onMounted(()=>{
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1260) {
+            document.body.classList.remove('on');
+            isCheck.value = false;
+        }
+    });
+})
 
 </script>
 

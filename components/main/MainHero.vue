@@ -19,11 +19,24 @@
                 >
             </div>
         </div>
+        <img
+            class="loadingimg"
+            src="@/assets/images/mainBg.jpg"
+            alt="이미지"
+            @load="offLoading"
+        />
     </div>
 </template>
 
 <script setup lang="ts">
 import HackerHeader from '@/components/common/HackerHeader.vue';
+
+import { useCommon } from '@/store/commonStore';
+const common = useCommon();
+const { OFF_LOADING } = common;
+const offLoading = () => {
+    OFF_LOADING();
+};
 </script>
 
 <style lang="scss" scoped>
